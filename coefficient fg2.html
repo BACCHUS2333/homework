@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/vintage.js"></script>
+
+</head>
+<body>
+    <div id="560a1f0368c644fbb6c0f7fe1b36811a" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_560a1f0368c644fbb6c0f7fe1b36811a = echarts.init(
+            document.getElementById('560a1f0368c644fbb6c0f7fe1b36811a'), 'vintage', {renderer: 'canvas'});
+        var option_560a1f0368c644fbb6c0f7fe1b36811a = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "boxplot",
+            "name": "coefficient",
+            "yAxisIndex": 0,
+            "data": [
+                [
+                    -0.5,
+                    -0.27,
+                    -0.27,
+                    -0.27,
+                    -0.010000000000000009
+                ],
+                [
+                    -0.37,
+                    -0.14,
+                    -0.14,
+                    -0.14,
+                    0.1200000000000001
+                ],
+                [
+                    -0.4,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.19999999999999996
+                ],
+                [
+                    -0.29999999999999993,
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.9000000000000001
+                ]
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "markPoint": {
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "color": "#fff",
+                    "margin": 8
+                }
+            },
+            "markLine": {
+                "silent": false,
+                "precision": 2,
+                "label": {
+                    "show": true,
+                    "position": "top",
+                    "margin": 8
+                }
+            },
+            "itemStyle": {
+                "color": "rgba(100,100,100,1)"
+            }
+        },
+        {
+            "type": "bar",
+            "name": "population",
+            "yAxisIndex": 1,
+            "legendHoverLink": true,
+            "data": [
+                73,
+                100,
+                86,
+                150
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(x){return Number(x.data).toFixed()+' people/per commu';}
+            },
+            "itemStyle": {
+                "color": "rgba(237,125,49,0.6)"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "coefficient",
+                "population"
+            ],
+            "selected": {
+                "coefficient": true,
+                "population": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "Asian",
+                "Caucasion",
+                "Hispanic",
+                "Ethiopian"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        },
+        {
+            "type": "value",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "position": "right",
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "BoxPlot-\u57fa\u672c\u793a\u4f8b",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_560a1f0368c644fbb6c0f7fe1b36811a.setOption(option_560a1f0368c644fbb6c0f7fe1b36811a);
+    </script>
+</body>
+</html>
